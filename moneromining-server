@@ -1,0 +1,38 @@
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 0},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 1},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 2},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 3},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 4},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 5},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 6},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 7},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 8},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 9},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 10},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 11},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 12},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 13},
+{ "low_power_mode" : false, "no_prefetch" : true, "affine_to_cpu" : 14},
+
+
+sudo sysctl -w vm.nr_hugepages=128
+
+pool.supportxmr.com:3333
+pool.supportxmr.com:5555
+
+
+cpuminer -a cryptonight -o stratum+tcp://xmr.pool.minergate.com:45700 -u tomderbaix@hotmail.com -p x
+
+sysctl -w vm.nr_hugepages=14
+
+/root/xmrig/build/./xmrig -a cryptonight -o stratum+tcp://pool.supportxmr.com:5555 -u MoneroAddress -p MinerIdentifier:Email
+
+
+pool.supportxmr.com:
+
+cd xmrig/xmrig/build
+nohup ./xmrig --coin 'monero' -o pool.supportxmr.com:5555 -u 48Kixni5PFYU7PcKp68ANDEk1PBGPY8Mcb9Rh3CBkg41e1GbLTuA1776qQDTDMooX3diPKMJgjDwpRVZpgRk7kjsJqyeaon -p x -t 15 &
+
+
+
+
